@@ -1,0 +1,278 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/fragment_result"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginBottom="50dp">
+
+    <android.support.v4.widget.NestedScrollView
+        android:id="@+id/root"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/layout_wrapper"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/header_results"
+                style="?android:attr/listSeparatorTextViewStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/tl_blue_80_percent"
+                android:text="@string/header_results" />
+
+            <View
+                android:layout_height="1dp"
+                android:layout_width="match_parent"
+                android:layout_below="@+id/header_results"
+                android:background="@color/tl_blue_80_percent" />
+
+            <LinearLayout
+                android:id="@+id/container_results_rooftype"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="@dimen/element_vertical_margin"
+                android:layout_marginLeft="@dimen/element_horizontal_margin">
+
+                <TextView
+                    android:id="@+id/label_results_rooftype"
+                    android:layout_width="120dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/results_rooftype" />
+
+                <TextView
+                    android:id="@+id/results_rooftype"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.65"
+                    android:layout_marginRight="10dp"
+                    android:textStyle="bold"
+                    android:textColor="@color/tl_black_80_percent"
+                    android:textSize="14sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/container_length"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="@dimen/element_vertical_margin"
+                android:layout_marginLeft="@dimen/element_horizontal_margin">
+
+                <TextView
+                    android:id="@+id/label_length"
+                    android:layout_width="120dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/length" />
+
+                <TextView
+                    android:id="@+id/length"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.65"
+                    android:layout_marginRight="10dp"
+                    android:textStyle="bold"
+                    android:textColor="@color/tl_black_80_percent"
+                    android:textSize="14sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/container_width"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="@dimen/element_vertical_margin"
+                android:layout_marginLeft="@dimen/element_horizontal_margin">
+
+                <TextView
+                    android:id="@+id/label_width"
+                    android:layout_width="120dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/width" />
+
+                <TextView
+                    android:id="@+id/width"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.65"
+                    android:layout_marginRight="10dp"
+                    android:textStyle="bold"
+                    android:textColor="@color/tl_black_80_percent"
+                    android:textSize="14sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/container_results_area"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="@dimen/element_vertical_margin"
+                android:layout_marginLeft="@dimen/element_horizontal_margin">
+
+                <TextView
+                    android:id="@+id/label_results_area"
+                    android:layout_width="120dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/results_area" />
+
+                <TextView
+                    android:id="@+id/results_area"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.65"
+                    android:layout_marginRight="10dp"
+                    android:textStyle="bold"
+                    android:textColor="@color/tl_black_80_percent"
+                    android:textSize="14sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/container_results_angle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="@dimen/element_vertical_margin"
+                android:layout_marginLeft="@dimen/element_horizontal_margin">
+
+                <TextView
+                    android:id="@+id/label_results_angle"
+                    android:layout_width="120dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/results_angle" />
+
+                <TextView
+                    android:id="@+id/results_angle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.65"
+                    android:layout_marginRight="10dp"
+                    android:textStyle="bold"
+                    android:textColor="@color/tl_black_80_percent"
+                    android:textSize="14sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/container_results_pitch"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="@dimen/element_vertical_margin"
+                android:layout_marginLeft="@dimen/element_horizontal_margin">
+
+                <TextView
+                    android:id="@+id/label_results_pitch"
+                    android:layout_width="120dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/results_pitch" />
+
+                <TextView
+                    android:id="@+id/results_pitch"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.65"
+                    android:layout_marginRight="10dp"
+                    android:textStyle="bold"
+                    android:textColor="@color/tl_black_80_percent"
+                    android:textSize="14sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/container_results_rooftile"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="@dimen/element_vertical_margin"
+                android:layout_marginLeft="@dimen/element_horizontal_margin">
+
+                <TextView
+                    android:id="@+id/label_results_rooftile"
+                    android:layout_width="120dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/results_rooftile" />
+
+                <TextView
+                    android:id="@+id/results_rooftile"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.65"
+                    android:layout_marginRight="10dp"
+                    android:textStyle="bold"
+                    android:textColor="@color/tl_black_80_percent"
+                    android:textSize="14sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/container_results_roofqty"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="@dimen/element_vertical_margin"
+                android:layout_marginLeft="@dimen/element_horizontal_margin">
+
+                <TextView
+                    android:id="@+id/label_results_roofqty"
+                    android:layout_width="120dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/results_roofqty" />
+
+                <TextView
+                    android:id="@+id/results_roofqty"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.65"
+                    android:layout_marginRight="10dp"
+                    android:textStyle="bold"
+                    android:textColor="@color/tl_black_80_percent"
+                    android:textSize="14sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/container_results_ridge"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="@dimen/element_vertical_margin"
+                android:layout_marginLeft="@dimen/element_horizontal_margin">
+
+                <TextView
+                    android:id="@+id/label_results_ridge"
+                    android:layout_width="120dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/results_ridge" />
+
+                <TextView
+                    android:id="@+id/results_ridge"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.65"
+                    android:layout_marginRight="10dp"
+                    android:textStyle="bold"
+                    android:textColor="@color/tl_black_80_percent"
+                    android:textSize="14sp" />
+
+            </LinearLayout>
+
+            <!-- list of materials -->
+            <include layout="@layout/container_materials"/>
+            <!-- end of list -->
+        </LinearLayout>
+    </android.support.v4.widget.NestedScrollView>
+</RelativeLayout>

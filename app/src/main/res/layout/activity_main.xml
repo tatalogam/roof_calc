@@ -1,34 +1,252 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:orientation="vertical"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:fitsSystemWindows="true"
-    tools:context="com.development.roof_calc.MainActivity">
+    android:layout_height="match_parent">
 
-    <android.support.design.widget.AppBarLayout
+    <!--
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    -->
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:theme="@style/AppTheme.AppBarOverlay">
+        android:layout_height="@dimen/toolbar_maxheight"
+        android:background="@color/tl_blue_80_percent">
 
-        <android.support.v7.widget.Toolbar
-            android:id="@+id/toolbar"
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/word_roof"
+                android:textColor="@color/white_100_percent"
+                android:textStyle="bold"
+                android:textSize="24sp"
+                android:text="@string/word_roof" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:id="@+id/word_calculator"
+                android:layout_toRightOf="@id/word_roof"
+                android:textColor="@color/tl_blue_70_percent"
+                android:textStyle="bold"
+                android:textSize="24sp"
+                android:text="@string/word_calculator"/>
+
+            <android.support.v7.widget.AppCompatImageView
+                android:id="@+id/ic_roofcalc"
+                android:layout_width="85dp"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:src="@drawable/ic_roofcalc" />
+
+        </RelativeLayout>
+    </android.support.v7.widget.Toolbar>
+
+    <ScrollView
+        android:id="@+id/root"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/toolbar"
+        android:orientation="vertical"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:id="@+id/layout_wrapper"
             android:layout_width="match_parent"
-            android:layout_height="?attr/actionBarSize"
-            android:background="?attr/colorPrimary"
-            app:popupTheme="@style/AppTheme.PopupOverlay" />
+            android:layout_height="wrap_content"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:orientation="vertical">
 
-    </android.support.design.widget.AppBarLayout>
+            <TextView
+                android:id="@+id/header_identity"
+                style="?android:attr/listSeparatorTextViewStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/tl_blue_80_percent"
+                android:text="@string/header_identity" />
 
-    <include layout="@layout/content_main" />
+            <View
+                android:layout_height="1dp"
+                android:layout_width="match_parent"
+                android:layout_below="@+id/header_identity"
+                android:background="@color/tl_blue_80_percent" />
 
-    <android.support.design.widget.FloatingActionButton
-        android:id="@+id/fab"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="bottom|end"
-        android:layout_margin="@dimen/fab_margin"
-        app:srcCompat="@android:drawable/ic_dialog_email" />
+            <LinearLayout
+                android:id="@+id/container_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginLeft="@dimen/element_horizontal_margin">
 
-</android.support.design.widget.CoordinatorLayout>
+                <TextView
+                    android:id="@+id/label_user_name"
+                    android:layout_width="wrap_content"
+                    android:minWidth="65dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/user_name" />
+
+                <EditText
+                    android:id="@+id/user_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.65"
+                    android:layout_marginRight="15dp"
+                    android:singleLine="true"
+                    android:textColor="@color/tl_black_80_percent"
+                    android:textSize="14sp"
+                    android:maxLength="12"
+                    android:hint="@string/hint_user_name">
+
+                    <requestFocus />
+
+                </EditText>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/container_email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginLeft="@dimen/element_horizontal_margin">
+
+                <TextView
+                    android:id="@+id/label_email"
+                    android:layout_width="wrap_content"
+                    android:minWidth="65dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/user_email" />
+
+                <EditText
+                    android:id="@+id/email"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.65"
+                    android:layout_marginRight="15dp"
+                    android:singleLine="true"
+                    android:textColor="@color/tl_black_80_percent"
+                    android:textSize="14sp"
+                    android:inputType="text|textEmailAddress"
+                    android:hint="@string/hint_email" >
+
+                </EditText>
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/header_calctype"
+                style="?android:attr/listSeparatorTextViewStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/tl_blue_80_percent"
+                android:text="@string/header_calctype" />
+
+            <View
+                android:layout_height="1dp"
+                android:layout_width="match_parent"
+                android:layout_below="@+id/header_calctype"
+                android:background="@color/tl_blue_80_percent" />
+
+            <com.andexert.library.RippleView
+                android:layout_width="wrap_content"
+                android:layout_height="80dp"
+                android:padding="2dp">
+
+                <LinearLayout
+                    android:id="@+id/btn_steelframe"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white_85_percent"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="85dp"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/iv_steelframe" />
+
+                    <TextView
+                        android:id="@+id/calctype_steelframe"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="10dp"
+                        android:textSize="24sp"
+                        android:textColor="@color/tl_black_100_percent"
+                        android:text="@string/calctype_steelframe" />
+
+                </LinearLayout>
+            </com.andexert.library.RippleView>
+
+            <com.andexert.library.RippleView
+                android:layout_width="wrap_content"
+                android:layout_height="80dp"
+                android:padding="2dp">
+
+                <LinearLayout
+                    android:id="@+id/btn_steelframe_metalroof"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white_85_percent"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="85dp"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/iv_steelframe_metalroof" />
+
+                    <TextView
+                        android:id="@+id/calctype_steel_metalroof"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="10dp"
+                        android:textSize="24sp"
+                        android:textColor="@color/tl_black_100_percent"
+                        android:text="@string/calctype_steel_metalroof" />
+
+                </LinearLayout>
+            </com.andexert.library.RippleView>
+
+            <com.andexert.library.RippleView
+                android:layout_width="wrap_content"
+                android:layout_height="80dp"
+                android:padding="2dp">
+
+                <LinearLayout
+                    android:id="@+id/btn_metalroof"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white_85_percent"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="85dp"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/iv_metalroof" />
+
+                    <TextView
+                        android:id="@+id/calctype_metalroof"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="10dp"
+                        android:textSize="24sp"
+                        android:textColor="@color/tl_black_100_percent"
+                        android:text="@string/calctype_metalroof" />
+
+                </LinearLayout>
+            </com.andexert.library.RippleView>
+
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

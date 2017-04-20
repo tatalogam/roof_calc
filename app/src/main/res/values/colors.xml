@@ -1,6 +1,27 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <!--
     <color name="colorPrimary">#3F51B5</color>
     <color name="colorPrimaryDark">#303F9F</color>
-    <color name="colorAccent">#FF4081</color>
+    <color name="colorAccent">#FF4081</color>-->
+    <color name="transparent">#00000000</color>
+
+    <color name="white_100_percent">#FFFFFF</color>
+    <color name="white_95_percent">#F7F8F9</color>
+    <color name="white_85_percent">#F1F2F4</color>
+    <color name="white_80_percent">#CCFFFFFF</color>
+    <color name="white_15_percent">#26FFFFFF</color>
+
+    <color name="tl_black_100_percent">#000000</color>
+    <color name="tl_black_80_percent">#2F2F2F</color>
+
+    <color name="tl_grey">#CCCCCC</color>
+
+    <color name="tl_blue_80_percent">#0A3667</color>
+    <color name="tl_blue_70_percent">#0277BC</color>
+    <color name="tl_blue_60_percent">#03A9F4</color>
+
+    <color name="tl_orange_70_percent">#F08619</color>
+
+    <color name="tl_green_75_percent">#00BB6C</color>
 </resources>

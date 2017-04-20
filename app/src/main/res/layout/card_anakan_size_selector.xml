@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_marginTop="4dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/porch_no"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="?android:attr/listSeparatorTextViewStyle"
+            android:textColor="@color/tl_blue_80_percent"
+            android:text=""/>
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_weight="1" />
+
+        <ImageView
+            android:id="@+id/btn_delete_anakan"
+            android:layout_width="65dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="end"
+            android:src="@drawable/ic_action_dec_box"/>
+    </LinearLayout>
+
+    <View
+        android:layout_height="1dp"
+        android:layout_width="match_parent"
+        android:background="@color/tl_blue_80_percent" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/cv"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            app:cardCornerRadius="4dp"
+            app:cardElevation="2dp"
+            app:cardPreventCornerOverlap="false"
+            app:contentPadding="0dp"
+            app:cardUseCompatPadding="true">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginLeft="@dimen/element_horizontal_margin">
+
+                    <TextView
+                        android:id="@+id/selector_name_width"
+                        android:layout_width="wrap_content"
+                        android:minWidth="125dp"
+                        android:layout_height="wrap_content"
+                        android:text="@string/width" />
+
+                    <TextView
+                        android:id="@+id/selector_value_width"
+                        android:layout_width="50dp"
+                        android:layout_height="wrap_content"
+                        android:singleLine="true"
+                        android:textColor="@color/tl_black_80_percent"
+                        android:textSize="14sp"
+                        android:inputType="number|numberSigned"
+                        android:gravity="center"
+                        android:text="0" />
+
+                    <TextView
+                        android:id="@+id/selector_measure_width"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/symbol_meter" />
+
+                    <ImageView
+                        android:id="@+id/btn_dec_width"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center_vertical"
+                        android:src="@drawable/ic_action_dec_box"/>
+
+                    <ImageView
+                        android:id="@+id/btn_add_width"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center_vertical"
+                        android:src="@drawable/ic_action_add_box"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginLeft="@dimen/element_horizontal_margin">
+
+                    <TextView
+                        android:id="@+id/selector_name_length"
+                        android:layout_width="wrap_content"
+                        android:minWidth="125dp"
+                        android:layout_height="wrap_content"
+                        android:minHeight="50dp"
+                        android:text="@string/length" />
+
+                    <TextView
+                        android:id="@+id/selector_value_length"
+                        android:layout_width="50dp"
+                        android:layout_height="wrap_content"
+                        android:singleLine="true"
+                        android:textColor="@color/tl_black_80_percent"
+                        android:textSize="14sp"
+                        android:inputType="number|numberSigned"
+                        android:gravity="center"
+                        android:text="0" />
+
+                    <TextView
+                        android:id="@+id/selector_measure_length"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/symbol_meter" />
+
+                    <ImageView
+                        android:id="@+id/btn_dec_length"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center_vertical"
+                        android:src="@drawable/ic_action_dec_box"/>
+
+                    <ImageView
+                        android:id="@+id/btn_add_length"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center_vertical"
+                        android:src="@drawable/ic_action_add_box"/>
+                </LinearLayout>
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+    </LinearLayout>
+</LinearLayout>

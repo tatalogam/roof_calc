@@ -1,23 +1,75 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.development.roof_calc">
+    package="com.tatalogam.roof_calc"
+    android:versionCode="6"
+    android:versionName="1.1.2">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.READ_SMS" />
+
+    <uses-sdk
+        android:minSdkVersion="16"
+        android:targetSdkVersion="25" />
 
     <application
+        android:name="com.orm.SugarApp"
         android:allowBackup="true"
-        android:icon="@mipmap/ic_launcher"
+        android:icon="@drawable/ic_roofcalc"
         android:label="@string/app_name"
+        android:largeHeap="true"
         android:supportsRtl="true"
-        android:theme="@style/AppTheme">
-        <activity
-            android:name=".MainActivity"
+        android:theme="@style/AppTheme"
+        android:hardwareAccelerated="false">
+
+        <activity android:name="com.tatalogam.roof_calc.activity.MainActivity_"
             android:label="@string/app_name"
-            android:theme="@style/AppTheme.NoActionBar">
+            android:screenOrientation="portrait">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
+        <activity android:name="com.tatalogam.roof_calc.activity.OrderActivity_"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.ACT_ORDER" />
+
+            </intent-filter>
+        </activity>
+
+        <activity android:name="com.tatalogam.roof_calc.activity.SplashActivity_"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.ACT_SPLASH" />
+
+            </intent-filter>
+        </activity>
+
+        <meta-data
+            android:name="DATABASE"
+            android:value="sugar_roofcalc.db" />
+        <meta-data
+            android:name="VERSION"
+            android:value="1.0.0" />
+        <meta-data
+            android:name="QUERY_LOG"
+            android:value="true" />
+        <meta-data
+            android:name="DOMAIN_PACKAGE_NAME"
+            android:value="com.tatalogam.roof_calc" />
+
+        <meta-data
+            android:name="io.fabric.ApiKey"
+            android:value="a18d486ff6cd8f2b65bb60fee55654bda8d2172a" />
     </application>
 
 </manifest>

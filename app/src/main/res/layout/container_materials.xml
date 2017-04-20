@@ -1,0 +1,304 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/container_materials"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/header_materials"
+        style="?android:attr/listSeparatorTextViewStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/element_vertical_margin"
+        android:textColor="@color/tl_blue_80_percent"
+        android:text="@string/header_materials" />
+
+    <View
+        android:layout_height="1dp"
+        android:layout_width="match_parent"
+        android:layout_below="@+id/header_materials"
+        android:background="@color/tl_blue_80_percent" />
+    
+    <LinearLayout
+        android:id="@+id/container_ts7575"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="@dimen/element_vertical_margin">
+
+        <ImageView
+            android:id="@+id/iv_ts7575"
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:src="@drawable/materials_ts7575" />
+
+        <TextView
+            android:id="@+id/label_ts7575"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_weight="0.65"
+            android:textColor="@color/tl_black_80_percent"
+            android:textSize="14sp"
+            android:text="@string/materials_ts7575"/>
+
+        <TextView
+            android:id="@+id/qty_ts7575"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="5dp"
+            android:gravity="right"
+            android:textStyle="bold"
+            android:textColor="@color/tl_black_80_percent"
+            android:textSize="20sp" />
+
+    </LinearLayout>
+
+    <View
+        android:layout_height="1dp"
+        android:layout_width="match_parent"
+        android:background="@color/tl_blue_80_percent" />
+
+    <LinearLayout
+        android:id="@+id/container_ts7580"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="@dimen/element_vertical_margin">
+
+        <ImageView
+            android:id="@+id/iv_ts7580"
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:src="@drawable/materials_ts7580" />
+
+        <TextView
+            android:id="@+id/label_ts7580"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_weight="0.65"
+            android:textColor="@color/tl_black_80_percent"
+            android:textSize="14sp"
+            android:text="@string/materials_ts7580"/>
+
+        <TextView
+            android:id="@+id/qty_ts7580"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="5dp"
+            android:gravity="right"
+            android:textStyle="bold"
+            android:textColor="@color/tl_black_80_percent"
+            android:textSize="20sp" />
+
+    </LinearLayout>
+
+    <View
+        android:layout_height="1dp"
+        android:layout_width="match_parent"
+        android:background="@color/tl_blue_80_percent" />
+
+    <LinearLayout
+        android:id="@+id/container_tr3245"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="@dimen/element_vertical_margin">
+
+        <ImageView
+            android:id="@+id/iv_tr3245"
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:src="@drawable/materials_tr3245" />
+
+        <TextView
+            android:id="@+id/label_tr3245"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_weight="0.65"
+            android:textColor="@color/tl_black_80_percent"
+            android:textSize="14sp"
+            android:text="@string/materials_tr3245" />
+
+        <TextView
+            android:id="@+id/qty_tr3245"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="5dp"
+            android:gravity="right"
+            android:textStyle="bold"
+            android:textColor="@color/tl_black_80_percent"
+            android:textSize="20sp" />
+
+    </LinearLayout>
+
+    <View
+        android:layout_height="1dp"
+        android:layout_width="match_parent"
+        android:background="@color/tl_blue_80_percent" />
+
+    <LinearLayout
+        android:id="@+id/container_screw_truss"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="@dimen/element_vertical_margin">
+
+        <ImageView
+            android:id="@+id/iv_screw_truss"
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:src="@drawable/materials_screw_truss" />
+
+        <TextView
+            android:id="@+id/label_screw_truss"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_weight="0.65"
+            android:textColor="@color/tl_black_80_percent"
+            android:textSize="14sp"
+            android:text="@string/materials_screw_truss" />
+
+        <TextView
+            android:id="@+id/qty_screw_truss"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="5dp"
+            android:gravity="right"
+            android:textStyle="bold"
+            android:textColor="@color/tl_black_80_percent"
+            android:textSize="20sp" />
+
+    </LinearLayout>
+
+    <View
+        android:layout_height="1dp"
+        android:layout_width="match_parent"
+        android:background="@color/tl_blue_80_percent" />
+
+    <LinearLayout
+        android:id="@+id/container_screw_reng"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="@dimen/element_vertical_margin">
+
+        <ImageView
+            android:id="@+id/iv_screw_reng"
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:src="@drawable/materials_screw_reng" />
+
+        <TextView
+            android:id="@+id/label_screw_reng"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_weight="0.65"
+            android:textColor="@color/tl_black_80_percent"
+            android:textSize="14sp"
+            android:text="@string/materials_screw_reng" />
+
+        <TextView
+            android:id="@+id/qty_screw_reng"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="5dp"
+            android:gravity="right"
+            android:textStyle="bold"
+            android:textColor="@color/tl_black_80_percent"
+            android:textSize="20sp" />
+
+    </LinearLayout>
+
+    <View
+        android:layout_height="1dp"
+        android:layout_width="match_parent"
+        android:background="@color/tl_blue_80_percent" />
+
+    <LinearLayout
+        android:id="@+id/container_bracket_l"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="@dimen/element_vertical_margin">
+
+        <ImageView
+            android:id="@+id/iv_bracket_l"
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:src="@drawable/materials_bracket_l" />
+
+        <TextView
+            android:id="@+id/label_bracket_l"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_weight="0.65"
+            android:textColor="@color/tl_black_80_percent"
+            android:textSize="14sp"
+            android:text="@string/materials_bracket_l" />
+
+        <TextView
+            android:id="@+id/qty_bracket_l"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="5dp"
+            android:gravity="right"
+            android:textStyle="bold"
+            android:textColor="@color/tl_black_80_percent"
+            android:textSize="20sp" />
+
+    </LinearLayout>
+
+    <View
+        android:layout_height="1dp"
+        android:layout_width="match_parent"
+        android:background="@color/tl_blue_80_percent" />
+
+    <LinearLayout
+        android:id="@+id/container_dynabolt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="@dimen/element_vertical_margin">
+
+        <ImageView
+            android:id="@+id/iv_dynabolt"
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:src="@drawable/materials_dynabolt" />
+
+        <TextView
+            android:id="@+id/label_dynabolt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_weight="0.65"
+            android:textColor="@color/tl_black_80_percent"
+            android:textSize="14sp"
+            android:text="@string/materials_dynabolt" />
+
+        <TextView
+            android:id="@+id/qty_dynabolt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="5dp"
+            android:gravity="right"
+            android:textStyle="bold"
+            android:textColor="@color/tl_black_80_percent"
+            android:textSize="20sp" />
+
+    </LinearLayout>
+
+    <View
+        android:layout_height="1dp"
+        android:layout_width="match_parent"
+        android:background="@color/tl_blue_80_percent" />
+</LinearLayout>
+

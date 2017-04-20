@@ -1,0 +1,344 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/fragment_steelframe"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="45dp">
+
+    <android.support.v4.widget.NestedScrollView
+        android:id="@+id/root"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/layout_wrapper"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/header_rooftype"
+                style="?android:attr/listSeparatorTextViewStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/tl_blue_80_percent"
+                android:text="@string/header_rooftype" />
+
+            <View
+                android:layout_height="1dp"
+                android:layout_width="match_parent"
+                android:layout_below="@+id/header_rooftype"
+                android:background="@color/tl_blue_80_percent" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginLeft="2dp"
+                android:layout_marginRight="2dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="10dp">
+
+                <LinearLayout
+                    android:id="@+id/container_gable"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="75dp"
+                    android:padding="4dp"
+                    android:layout_marginRight="2dp"
+                    android:background="@drawable/shape_card_done"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/rooftype_gable"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginRight="2dp"
+                        android:src="@drawable/rooftype_gable"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:textColor="@color/tl_black_80_percent"
+                        android:textSize="12sp"
+                        android:text="@string/rooftype_gable"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/container_hip"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="75dp"
+                    android:layout_marginRight="2dp"
+                    android:padding="4dp"
+                    android:background="@drawable/shape_card"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/rooftype_hip"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginRight="2dp"
+                        android:src="@drawable/rooftype_hip"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:textColor="@color/tl_black_80_percent"
+                        android:textSize="12sp"
+                        android:text="@string/rooftype_hip"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/container_shed"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_marginRight="2dp"
+                    android:layout_height="75dp"
+                    android:padding="4dp"
+                    android:background="@drawable/shape_card"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/rooftype_shed"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginRight="2dp"
+                        android:src="@drawable/rooftype_shed"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:textColor="@color/tl_black_80_percent"
+                        android:textSize="12sp"
+                        android:text="@string/rooftype_shed"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/container_dutch"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="75dp"
+                    android:padding="4dp"
+                    android:background="@drawable/shape_card"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/rooftype_dutch"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginRight="2dp"
+                        android:src="@drawable/rooftype_dutch"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:textColor="@color/tl_black_80_percent"
+                        android:textSize="12sp"
+                        android:text="@string/rooftype_dutch"/>
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/header_area"
+                style="?android:attr/listSeparatorTextViewStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/tl_blue_80_percent"
+                android:text="@string/header_area" />
+
+            <View
+                android:layout_height="1dp"
+                android:layout_width="match_parent"
+                android:layout_below="@+id/header_area"
+                android:background="@color/tl_blue_80_percent" />
+
+            <LinearLayout
+                android:id="@+id/container_length"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginLeft="@dimen/element_horizontal_margin">
+
+                <TextView
+                    android:id="@+id/label_length"
+                    android:layout_width="wrap_content"
+                    android:minWidth="125dp"
+                    android:layout_height="wrap_content"
+                    android:minHeight="50dp"
+                    android:text="@string/length" />
+
+                <EditText
+                    android:id="@+id/length"
+                    android:layout_width="50dp"
+                    android:layout_height="wrap_content"
+                    android:singleLine="true"
+                    android:textColor="@color/tl_black_80_percent"
+                    android:textSize="14sp"
+                    android:inputType="number|numberSigned"
+                    android:gravity="center"
+                    android:text="1">
+
+                </EditText>
+
+                <TextView
+                    android:id="@+id/length_meter"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/symbol_meter" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/container_width"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginLeft="@dimen/element_horizontal_margin">
+
+                <TextView
+                    android:id="@+id/label_width"
+                    android:layout_width="wrap_content"
+                    android:minWidth="125dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/width" />
+
+                <EditText
+                    android:id="@+id/width"
+                    android:layout_width="50dp"
+                    android:layout_height="wrap_content"
+                    android:singleLine="true"
+                    android:textColor="@color/tl_black_80_percent"
+                    android:textSize="14sp"
+                    android:inputType="number|numberSigned"
+                    android:gravity="center"
+                    android:text="1">
+
+                </EditText>
+
+                <TextView
+                    android:id="@+id/width_meter"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/symbol_meter" />
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/header_angle"
+                style="?android:attr/listSeparatorTextViewStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/tl_blue_80_percent"
+                android:text="@string/header_angle" />
+
+            <View
+                android:layout_height="1dp"
+                android:layout_width="match_parent"
+                android:layout_below="@+id/header_angle"
+                android:background="@color/tl_blue_80_percent" />
+
+            <LinearLayout
+                android:id="@+id/container_angle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginLeft="@dimen/element_horizontal_margin">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:src="@drawable/iv_angle" />
+
+                <LinearLayout
+                    android:id="@+id/container_degree"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/degree"
+                        android:layout_width="50dp"
+                        android:layout_height="wrap_content"
+                        android:background="@color/white_100_percent"
+                        android:padding="5dp"
+                        android:gravity="center"
+                        android:textColor="@color/tl_black_100_percent"
+                        android:textSize="14sp"
+                        android:text="@string/degree_start"/>
+
+                    <SeekBar
+                        android:id="@+id/seekbar_degree"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:max="35" >
+
+                    </SeekBar>
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/container_porch"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/header_porch"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    style="?android:attr/listSeparatorTextViewStyle"
+                    android:textColor="@color/tl_blue_80_percent"
+                    android:text="@string/header_porch" />
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_weight="1" />
+
+                <ImageView
+                    android:id="@+id/btn_add_anakan"
+                    android:layout_width="65dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="end"
+                    android:src="@drawable/ic_action_add_box" />
+            </LinearLayout>
+
+            <View
+                android:layout_height="1dp"
+                android:layout_width="match_parent"
+                android:layout_below="@+id/header_container_porch"
+                android:background="@color/tl_blue_80_percent" />
+
+            <LinearLayout
+                android:id="@+id/anakan_wrapper"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:orientation="vertical" >
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </android.support.v4.widget.NestedScrollView>
+</RelativeLayout>

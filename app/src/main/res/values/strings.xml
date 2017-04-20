@@ -1,4 +1,86 @@
 <resources>
-    <string name="app_name">roof_calc</string>
-    <string name="action_settings">Settings</string>
+    <string name="app_name">ROOF CALCULATOR</string>
+    <string name="word_roof">ROOF</string>
+    <string name="word_calculator">CALCULATOR</string>
+
+    <string name="guest">Guest</string>
+
+    <string name="lang_en">English</string>
+    <string name="lang_id">Indonesia</string>
+
+    <string name="header_identity">IDENTITY</string>
+    <string name="user_name">Name</string>
+    <string name="hint_user_name">Type your name</string>
+    <string name="user_email">Email</string>
+    <string name="hint_email">Type your email</string>
+
+    <string name="header_calctype">CALCULATION TYPE</string>
+    <string name="calctype_steelframe">STEEL FRAME ONLY</string>
+    <string name="calctype_steel_metalroof">STEEL FRAME &amp;\nMETAL ROOF</string>
+    <string name="calctype_metalroof">METAL ROOF ONLY</string>
+
+    <string name="header_rooftype">ROOF TYPE</string>
+    <string name="rooftype_gable">GABLE</string>
+    <string name="rooftype_hip">HIP</string>
+    <string name="rooftype_shed">SHED</string>
+    <string name="rooftype_dutch">DUTCH GABLE</string>
+
+    <string name="header_area">AREA ( + OVERHANG )</string>
+    <string name="length">Length \n( Bottom Cord )</string>
+    <string name="length_child">Length</string>
+    <string name="width">Width</string>
+
+    <string name="header_angle">ANGLE</string>
+    <string name="degree_start">15</string>
+
+    <string name="header_porch">PORCH ( + OVERHANG )</string>
+    <string name="header_1stporch">1st Porch</string>
+    <string name="header_2ndporch">2nd Porch</string>
+    <string name="header_3rdporch">3rd Porch</string>
+
+    <string name="btn_next">NEXT</string>
+    <string name="btn_back">BACK</string>
+
+    <string name="header_rooftile">ROOF TILE</string>
+
+    <string name="header_results">RESULTS</string>
+    <string name="results_rooftype">Roof Type</string>
+    <string name="results_area">Area</string>
+    <string name="results_angle">Angle</string>
+    <string name="results_pitch">Pitch \n( Area x Angle )</string>
+    <string name="results_rooftile">Roof Tile</string>
+    <string name="results_roofqty">Number of\nSheet</string>
+    <string name="results_ridge">Length of\nRidge</string>
+
+    <string name="header_materials">MATERIALS</string>
+    <string name="materials_ts7575">Taso (TS) C75.75 - 6m</string>
+    <string name="materials_ts7580">Taso (TS) C75.80 - 6m</string>
+    <string name="materials_tr3245">Taso (TR) C32.45 - 6m</string>
+    <string name="materials_screw_truss">Truss Screw</string>
+    <string name="materials_screw_reng">Button Screw</string>
+    <string name="materials_bracket_l">L Bracket</string>
+    <string name="materials_dynabolt">Dynabolt</string>
+
+    <string name="symbol_angle">\u00B0</string>
+    <string name="symbol_meter">meter</string>
+    <string name="symbol_sqrmeter">m\u00B2</string>
+    <string name="symbol_sheet">sheet</string>
+    <string name="symbol_bars">bars</string>
+    <string name="symbol_piece">piece</string>
+
+    <string name="message">Message</string>
+    <string name="success">Success</string>
+    <string name="ok">OK</string>
+    <string name="err">Error</string>
+    <string name="err_no_network">Not Connected to Network</string>
+    <string name="err_no_internet">No Internet</string>
+    <string name="email_sent">Email Sent</string>
+    <string name="email_fail">Failed Sending Email</string>
+    <string name="email_invalid">Invalid Email Format</string>
+    <string name="email_sendlimit">Can only send once</string>
+
+    <!-- menu action button -->
+    <string name="btnmenu_shopping_cart">Place Order</string>
+    <string name="btnmenu_mail">Email Results</string>
+    <string name="btnmenu_replay">Recalculate</string>
 </resources>
