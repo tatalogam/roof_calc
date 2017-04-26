@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <shape
     xmlns:android="http://schemas.android.com/apk/res/android"
-    android:shape="rectangle"   >
+    android:shape="rectangle" >
     <!--
         <solid
             android:color="@color/white_100_percent" >
@@ -12,6 +12,6 @@
     </corners>
 
     <stroke
-        android:width="3px"
+        android:width="5px"
         android:color="@color/tl_green_75_percent" />
 </shape>

@@ -60,6 +60,7 @@
                         android:layout_height="wrap_content"
                         android:layout_gravity="center"
                         android:layout_marginRight="2dp"
+                        android:scaleType="fitXY"
                         android:src="@drawable/rooftype_gable"/>
 
                     <TextView
@@ -88,6 +89,7 @@
                         android:layout_height="wrap_content"
                         android:layout_gravity="center"
                         android:layout_marginRight="2dp"
+                        android:scaleType="fitXY"
                         android:src="@drawable/rooftype_hip"/>
 
                     <TextView
@@ -116,6 +118,7 @@
                         android:layout_height="wrap_content"
                         android:layout_gravity="center"
                         android:layout_marginRight="2dp"
+                        android:scaleType="fitXY"
                         android:src="@drawable/rooftype_shed"/>
 
                     <TextView
@@ -143,6 +146,7 @@
                         android:layout_height="wrap_content"
                         android:layout_gravity="center"
                         android:layout_marginRight="2dp"
+                        android:scaleType="fitXY"
                         android:src="@drawable/rooftype_dutch"/>
 
                     <TextView
@@ -267,7 +271,8 @@
                     android:id="@+id/iv_angle"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="5dp"/>
+                    android:layout_marginTop="5dp"
+                    android:src="@drawable/iv_angle"/>
 
                 <LinearLayout
                     android:id="@+id/container_degree"
