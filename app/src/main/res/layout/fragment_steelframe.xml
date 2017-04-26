@@ -264,10 +264,10 @@
                 android:layout_marginLeft="@dimen/element_horizontal_margin">
 
                 <ImageView
+                    android:id="@+id/iv_angle"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="5dp"
-                    android:src="@drawable/iv_angle" />
+                    android:layout_marginTop="5dp"/>
 
                 <LinearLayout
                     android:id="@+id/container_degree"

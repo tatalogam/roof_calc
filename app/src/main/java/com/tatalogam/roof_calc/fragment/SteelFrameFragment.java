@@ -5,6 +5,9 @@ import android.os.Handler;
 
 import android.support.v4.app.Fragment;
 import android.support.v4.widget.NestedScrollView;
+
+import android.graphics.Bitmap;
+import android.graphics.BitmapFactory;
 import android.text.Editable;
 import android.text.TextWatcher;
 import android.view.InflateException;
@@ -42,6 +45,7 @@ public class SteelFrameFragment extends Fragment{
     private ImageView rooftype_hip;
     private ImageView rooftype_shed;
     private ImageView rooftype_dutch;
+    private ImageView iv_angle;
     private ImageView btn_add_anakan;
 
     private TextView selectorAnakan1ValueLength;
@@ -88,6 +92,7 @@ public class SteelFrameFragment extends Fragment{
         rooftype_hip=(ImageView)rootView.findViewById(R.id.rooftype_hip);
         rooftype_shed=(ImageView)rootView.findViewById(R.id.rooftype_shed);
         rooftype_dutch=(ImageView)rootView.findViewById(R.id.rooftype_dutch);
+        iv_angle=(ImageView)rootView.findViewById(R.id.iv_angle);
         btn_add_anakan=(ImageView)rootView.findViewById(R.id.btn_add_anakan);
 
         length=(EditText)rootView.findViewById(R.id.length);
@@ -100,48 +105,48 @@ public class SteelFrameFragment extends Fragment{
 
         //set event listener
         rooftype_gable.setOnClickListener(new ImageView.OnClickListener() {
-              public void onClick(View v) {
-                  resetContainerBackground();
-                  oldRooftype = 1;
+          public void onClick(View v) {
+              resetContainerBackground();
+              oldRooftype = 1;
 
-                  orderActivity.cb.setRoofType(1);
-                  orderActivity.cb.setBuffer(Constant.buffer[0]);
-                  container_gable.setBackground(getResources().getDrawable(R.drawable.shape_card_done));
-              }
-          });
+              orderActivity.cb.setRoofType(1);
+              orderActivity.cb.setBuffer(Constant.buffer[0]);
+              container_gable.setBackground(getResources().getDrawable(R.drawable.shape_card_done));
+          }
+        });
 
-          rooftype_hip.setOnClickListener(new ImageView.OnClickListener() {
-              public void onClick(View v) {
-                  resetContainerBackground();
-                  oldRooftype = 2;
+        rooftype_hip.setOnClickListener(new ImageView.OnClickListener() {
+          public void onClick(View v) {
+              resetContainerBackground();
+              oldRooftype = 2;
 
-                  orderActivity.cb.setRoofType(2);
-                  orderActivity.cb.setBuffer(Constant.buffer[1]);
-                  container_hip.setBackground(getResources().getDrawable(R.drawable.shape_card_done));
-              }
-          });
+              orderActivity.cb.setRoofType(2);
+              orderActivity.cb.setBuffer(Constant.buffer[1]);
+              container_hip.setBackground(getResources().getDrawable(R.drawable.shape_card_done));
+          }
+        });
 
-          rooftype_shed.setOnClickListener(new ImageView.OnClickListener() {
-              public void onClick(View v) {
-                  resetContainerBackground();
-                  oldRooftype = 3;
+        rooftype_shed.setOnClickListener(new ImageView.OnClickListener() {
+          public void onClick(View v) {
+              resetContainerBackground();
+              oldRooftype = 3;
 
-                  orderActivity.cb.setRoofType(3);
-                  orderActivity.cb.setBuffer(Constant.buffer[0]);
-                  container_shed.setBackground(getResources().getDrawable(R.drawable.shape_card_done));
-              }
-          });
+              orderActivity.cb.setRoofType(3);
+              orderActivity.cb.setBuffer(Constant.buffer[0]);
+              container_shed.setBackground(getResources().getDrawable(R.drawable.shape_card_done));
+          }
+        });
 
-          rooftype_dutch.setOnClickListener(new ImageView.OnClickListener() {
-              public void onClick(View v) {
-                  resetContainerBackground();
-                  oldRooftype = 4;
+        rooftype_dutch.setOnClickListener(new ImageView.OnClickListener() {
+          public void onClick(View v) {
+              resetContainerBackground();
+              oldRooftype = 4;
 
-                  orderActivity.cb.setRoofType(4);
-                  orderActivity.cb.setBuffer(Constant.buffer[1]);
-                  container_dutch.setBackground(getResources().getDrawable(R.drawable.shape_card_done));
-              }
-          });
+              orderActivity.cb.setRoofType(4);
+              orderActivity.cb.setBuffer(Constant.buffer[1]);
+              container_dutch.setBackground(getResources().getDrawable(R.drawable.shape_card_done));
+          }
+        });
 
         length.addTextChangedListener(new TextWatcher() {
             @Override
@@ -463,7 +468,7 @@ public class SteelFrameFragment extends Fragment{
 
                 anakan_wrapper.addView(view);
                 focusOnView(anakan_wrapper);
-                YoYo.with(Techniques.BounceIn).duration(1000).playOn(view);
+                //YoYo.with(Techniques.BounceIn).duration(1000).playOn(view);
                 orderActivity.cb.setJumlahAnakan(tmpx);
             }
         });

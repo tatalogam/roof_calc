@@ -14,9 +14,14 @@ public class DBHelper {
     public static String getLang() {
         String lo = null;
 
-        List<Config> configs = Select.from(Config.class).where(Condition.prop("name").eq("lang")).list();
-        if (configs.size() > 0) {
-            lo = configs.get(0).getValue();
+        try {
+            List<Config> configs = Select.from(Config.class).where(Condition.prop("name").eq("lang")).list();
+            if (configs.size() > 0) {
+                lo = configs.get(0).getValue();
+            }
+        }
+        catch (Exception e){
+            //do nothing
         }
 
         return lo;
@@ -26,16 +31,16 @@ public class DBHelper {
         //for name,email,sim_country,network_country
         JSONObject user_info = new JSONObject();
 
-        //get user_info from sugar
-        List<Config> configs = Select.from(Config.class).where(Condition.prop("name").eq("user_info")).list();
+        try {
+            //get user_info from sugar
+            List<Config> configs = Select.from(Config.class).where(Condition.prop("name").eq("user_info")).list();
 
-        if (configs.size() > 0) {
-            try{
+            if (configs.size() > 0) {
                 user_info = new JSONObject(configs.get(0).getValue());
-            } catch (JSONException e) {
-                // TODO Auto-generated catch block
-                e.printStackTrace();
             }
+        }
+        catch (Exception e) {
+            //do nothing
         }
 
         return user_info;

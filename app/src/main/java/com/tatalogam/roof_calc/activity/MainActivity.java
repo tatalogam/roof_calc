@@ -81,10 +81,11 @@ public class MainActivity extends AppCompatActivity {
             locale.setDefault(new Locale("in", "ID"));
         }
         else{
-            lang=tMgr.getNetworkCountryIso();
+            lang= ( tMgr.getNetworkCountryIso()!=null ? tMgr.getNetworkCountryIso() : "us" );
             locale.setDefault(Locale.US);
         }
 
+        //sugar config contains : lang & user_info
         Configuration config = new Configuration();
         config.locale = locale;
         getBaseContext().getResources().updateConfiguration(config,
@@ -182,7 +183,7 @@ public class MainActivity extends AppCompatActivity {
         //Add user_info to bundle
         bundle.putString("USER_INFO", user_info.toString());
         //Add selected_calctype to bundle
-        bundle.putString("calctype", "steelframe_metalroof");
+        bundle.putString("CALC_TYPE", "steelframe_metalroof");
         //Add the bundle to the intent
         i.putExtras(bundle);
         startActivity(i);
